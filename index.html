@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{text-decoration: none;}
+    </style>
 </head>
 <body>
     <div id="root"></div>
@@ -27,6 +30,15 @@
             <a href=${navidata[0].href}> 
                 ${navidata[0].navitext}
             </a>`
+        let linklist = "";
+        linklist += `<h2>네비게이션</h2>`;
+        linklist += `<ul>`;
+            for(x in navidata){
+                linklist +=`<li><a href="${navidata[x].href}" target="_blank">${navidata[x].navitext}</a></li>`;
+            }
+        linklist += `</ul>`;
+        document.querySelector("#root").innerHTML = linklist;
+
     </script>
 </body>
 </html>

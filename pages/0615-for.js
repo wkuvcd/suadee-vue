@@ -1,3 +1,5 @@
+// for 문 - 0615
+
 for(let x = 0; x < 10; x++){
     console.log(x);   
    }

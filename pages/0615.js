@@ -127,6 +127,3 @@ const navigationData = [
         "subMenu": []
     }
 ];
-
-// for 문
-
